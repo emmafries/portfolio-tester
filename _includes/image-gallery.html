@@ -2,23 +2,24 @@
 {% assign gallery_height = include.height | default: "300" %}
 {% assign gallery_align = include.align | default: "none" %}
 
-<div class="image-gallery" style="--gallery-height: {{ gallery_height }}px; float: {{ gallery_align }}; {% if gallery_align == 'left' %}margin-right: 15px;{% elsif gallery_align == 'right' %}margin-left: 15px;">
+{% if gallery_align == 'left' %}
+  {% assign margin_style = "margin-right: 15px;" %}
+{% elsif gallery_align == 'right' %}
+  {% assign margin_style = "margin-left: 15px;" %}
+{% else %}
+  {% assign margin_style = "" %}
+{% endif %}
+
+{% capture box_style %}--gallery-height: {{ gallery_height }}px; float: {{ gallery_align }}; {{ margin_style }} margin-bottom: 10px;{% endcapture %}
+
+<div class="image-gallery" style="{{ box_style }}">
   {% for image_path in image_paths %}
-      {% assign image_name = image_path | strip %}
-      {% if image_name contains 'https://' %}
-          <img 
-              src="{{ image_name }}"
-              alt="Web image"
-              loading="lazy"
-          />
-      {% else %}
-          {% assign page_url_without_index = page.url | remove: 'index' | remove: '.html' %}
-          <img 
-              src="{{ page_url_without_index }}{{ image_name }}" 
-              alt="{{image_name}}"
-              loading="lazy"
-              onerror="this.onerror=null;this.src=this.src.replace('.webp','.png').replace('.png','.webp');"
-          />
-      {% endif %}
+    {% assign image_name = image_path | strip %}
+    {% if image_name contains 'https://' %}
+      <img src="{{ image_name }}" alt="Web image" loading="lazy" />
+    {% else %}
+      {% assign page_url_without_index = page.url | remove: 'index' | remove: '.html' %}
+      <img src="{{ page_url_without_index }}{{ image_name }}" alt="{{image_name}}" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace('.webp','.png').replace('.png','.webp');" />
+    {% endif %}
   {% endfor %}
 </div>
