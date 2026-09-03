@@ -14,7 +14,7 @@ main-image: /Sapien 3.jpeg
 ---
 
 
-{% include image-gallery.html images="Sapien 3.png" height="300" align="left" %}
+{% include image-gallery.html images="Sapien 3.png" height="300" align="right" %}
 
 ## Goals: 
 Improve "subjective and tedious" inspection while maintaining accuracy and repeatability
