@@ -14,7 +14,7 @@ main-image: /Sapien 3.jpeg
 ---
 
 
-
+{% include image-gallery.html images="Sapien 3.png" height="300" align="left" %}
 
 ## Goals: 
 Improve "subjective and tedious" inspection while maintaining accuracy and repeatability
@@ -22,10 +22,6 @@ Improve "subjective and tedious" inspection while maintaining accuracy and repea
 - "Lights Out" inspection
 - Minimize inspection time
 
-{% include image-gallery.html images="Sapien 3.png" height="300" align="left" %}
-
-
-{% include image-gallery.html images="Sapien 3.png" height="300" align="right"%}
 <span style="font-size: 15px">Edwards SAPIEN 3 Ultra transcatheter heart valve</span>
 <span style="font-size: 12px">Design proprietary under NDA - generic substitute image from https://www.edwards.com/healthcare-professionals/products-services/transcatheter-heart/transcatheter-sapien-3-ultra</span>
 
