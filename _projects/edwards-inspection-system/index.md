@@ -21,6 +21,8 @@ main-image: /Sapien 3.jpeg
 
 <div style="clear: both;"></div>
 
+<div style="clear: both;"></div>
+
 <style>
   /* Forces the template to allow side-by-side elements */
   .image-gallery-container {
