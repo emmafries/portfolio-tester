@@ -13,13 +13,11 @@ main-image: /Sapien 3.jpeg
 
 ---
 <div style="display: block; clear: both;">
-  {% include image-gallery.html images="Sapien 3.png" height="250" align="left" %}
+  {% include image-gallery.html images="Sapien 3.png" height="250" align="right" %}
   <p>
     This is your paragraph text that will now wrap next to your left-aligned image. By containing both the Jekyll include tag and the paragraph element inside this custom layout div block, we break the theme's vertical flex column limits and allow the text to flow smoothly into the empty space right next to the picture.
   </p>
 </div>
-
-<div style="clear: both;"></div>
 
 <div style="clear: both;"></div>
 
