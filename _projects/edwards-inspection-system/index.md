@@ -20,7 +20,7 @@ main-image: /Sapien 3.jpeg
 {% include image-gallery.html images="Sapien 3.png" height="250" align="left" %}
 This is the paragraph text that will automatically wrap around your image. Because the layout uses a left float with a 15-pixel right margin, the text will maintain a clean, readable gap on the right side of the graphic without crashing into it.
 
-
+{% include image-gallery.html images="Sapien 3.png" height="300" align="right" %}
 ## Goals: 
 Improve "subjective and tedious" inspection while maintaining accuracy and repeatability
 - 100% inspection of metal frame
