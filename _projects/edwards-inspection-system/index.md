@@ -13,15 +13,20 @@ main-image: /Sapien 3.jpeg
 
 ---
 
-{% include image-gallery.html images="Sapien 3.png" height="250" align="left" %}This is the paragraph text that will automatically wrap around your image. Because the layout uses a left float with a 15-pixel right margin, the text will maintain a clean, readable gap on the right side of the graphic without crashing into it.
-
+<style>
+  /* Forces the template to allow side-by-side elements */
+  .image-gallery-container {
+    display: inline-block !important;
+    width: auto !important;
+  }
+</style>
 {% include image-gallery.html images="Sapien 3.png" height="300" align="right" %}
 ## Goals: 
 Improve "subjective and tedious" inspection while maintaining accuracy and repeatability
 - 100% inspection of metal frame
 - "Lights Out" inspection
 - Minimize inspection time
-
+<div style="clear: both;"></div>
 <span style="font-size: 15px">Edwards SAPIEN 3 Ultra transcatheter heart valve</span>
 <span style="font-size: 12px">Design proprietary under NDA - generic substitute image from https://www.edwards.com/healthcare-professionals/products-services/transcatheter-heart/transcatheter-sapien-3-ultra</span>
 
