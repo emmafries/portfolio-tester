@@ -14,6 +14,11 @@ main-image: /Sapien 3.jpeg
 ---
 
 {% include image-gallery.html images="Sapien 3.png" height="300" align="right" %}
+
+Some paragraph text here will now wrap around the image...
+
+<div style="clear: both;"></div>
+
 ## Goals: 
 Improve "subjective and tedious" inspection while maintaining accuracy and repeatability
 - 100% inspection of metal frame

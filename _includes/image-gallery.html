@@ -10,14 +10,26 @@
   {% assign img_style = "" %}
 {% endif %}
 
-<div class="image-gallery-container" style="display: block; width: auto; overflow: auto;">
+{% if gallery_align == 'left' or gallery_align == 'right' %}
   {% for image_path in image_paths %}
     {% assign image_name = image_path | strip %}
     {% if image_name contains 'https://' %}
       <img src="{{ image_name }}" alt="Web image" loading="lazy" style="height: {{ gallery_height }}px; width: auto; {{ img_style }}" />
     {% else %}
       {% assign page_url_without_index = page.url | remove: 'index' | remove: '.html' %}
-      <img src="{{ page_url_without_index }}{{ image_name }}" alt="{{image_name}}" loading="lazy" style="height: {{ gallery_height }}px; width: auto; {{ img_style }}" onerror="this.onerror=null;this.src=this.src.replace('.webp','.png').replace('.png','.webp');" />
+      <img src="{{ page_url_without_index }}{{ image_name }}" alt="{{ image_name }}" loading="lazy" style="height: {{ gallery_height }}px; width: auto; {{ img_style }}" onerror="this.onerror=null;this.src=this.src.replace('.webp','.png').replace('.png','.webp');" />
     {% endif %}
   {% endfor %}
-</div>
+{% else %}
+  <div class="image-gallery-container" style="display: block; width: auto; overflow: auto;">
+    {% for image_path in image_paths %}
+      {% assign image_name = image_path | strip %}
+      {% if image_name contains 'https://' %}
+        <img src="{{ image_name }}" alt="Web image" loading="lazy" style="height: {{ gallery_height }}px; width: auto;" />
+      {% else %}
+        {% assign page_url_without_index = page.url | remove: 'index' | remove: '.html' %}
+        <img src="{{ page_url_without_index }}{{ image_name }}" alt="{{ image_name }}" loading="lazy" style="height: {{ gallery_height }}px; width: auto;" onerror="this.onerror=null;this.src=this.src.replace('.webp','.png').replace('.png','.webp');" />
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
