@@ -23,8 +23,9 @@ Improve "subjective and tedious" inspection while maintaining accuracy and repea
 
 <div style="clear: both;"></div>
 
-<span style="font-size: 15px">Edwards SAPIEN 3 Ultra transcatheter heart valve</span>
-<span style="font-size: 12px">Design proprietary under NDA - generic substitute image from https://www.edwards.com/healthcare-professionals/products-services/transcatheter-heart/transcatheter-sapien-3-ultra</span>
+<span style="font-size: 15px; text-align: right;">Edwards SAPIEN 3 Ultra transcatheter heart valve</span>
+
+<span style="font-size: 12px; text-align: right">Design proprietary under NDA - generic substitute image from https://www.edwards.com/healthcare-professionals/products-services/transcatheter-heart/transcatheter-sapien-3-ultra</span>
 
 
 
