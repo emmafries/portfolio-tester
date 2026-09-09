@@ -15,6 +15,8 @@ main-image: /Sapien 3.jpeg
 
 {% include image-gallery.html images="Sapien 3.png" height="300" align="left" %}
 
+<br>
+<br>
 ## Goals: 
 Improve "subjective and tedious" inspection while maintaining accuracy and repeatability
 - 100% inspection of metal frame
@@ -23,11 +25,11 @@ Improve "subjective and tedious" inspection while maintaining accuracy and repea
 
 <div style="clear: both;"></div>
 
-<span style="font-size: 15px; text-align: right;">Edwards SAPIEN 3 Ultra transcatheter heart valve</span>
-
-<span style="font-size: 12px; text-align: right">Design proprietary under NDA - generic substitute image from https://www.edwards.com/healthcare-professionals/products-services/transcatheter-heart/transcatheter-sapien-3-ultra</span>
-
-
+<div style="text-align: right;">
+  <span style="font-size: 15px;">Edwards SAPIEN 3 Ultra Transcatheter Heart Valve</span>
+  <br>
+  <span style="font-size: 12px; text-align: right">Design proprietary under NDA - generic substitute image <br> from https://www.edwards.com/healthcare-professionals/products-services/transcatheter-heart/transcatheter-sapien-3-ultra</span>
+</div>
 
 
 ## How?
