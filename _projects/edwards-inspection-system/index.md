@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Heart Valve Visual Inspection System
-# description: Developed a proof-of-concept **prototype** to demonstrate the utility and feasibility of an automated inspection process
+description: Cal Poly Senior Project Sponsored by Edwards Lifesciences 
 
 skills: 
 - SolidWorks
@@ -12,16 +12,18 @@ main-image: /Sapien 3.jpeg
 ---
 
 ---
+This senior project ran from Fall 2023 until Spring 2024 and was sponsored by Edwards Lifesciences. Many details of the project are limited by NDA and IP restrictions. Edwards Lifesciences inspects heart valve frames through a manual process that is described as "subjective and tedious". We were tasked with developing a prototype to transform the  inspection process and demostrate the feasibility of an automated inspection process. 
+
 
 {% include image-gallery.html images="Sapien 3.png" height="300" align="right" %}
 
 <br>
 <br>
 ## Goals: 
-Improve "subjective and tedious" inspection while maintaining accuracy and repeatability
-- 100% inspection of metal frame
-- "Lights Out" inspection
+- Create 100% inspection of the metal frame
+- Fully automated, "Lights Out" inspection
 - Minimize inspection time
+- Lower cost
 
 <div style="clear: both;"></div>
 
@@ -34,26 +36,24 @@ Improve "subjective and tedious" inspection while maintaining accuracy and repea
 
 ## How?
 - Designed pneumatic fixtures, motion control for a Meca500 robot arm, and camera assembly for inspection cycle
-
 - Utilized **SolidWorks** to model assembly and create custom components with technical drawings with **GD&T**
-
 - Manufactured components using **3D printing** and manual mill
+- Implemented robot motion and pneumatic control using RoboDK and Mecademic software
+- Configured Basler Pylon image acquisition system to generate inspection images
 
-{% include image-gallery.html images="SrProjectImage2.jpeg" height="500" %} 
+
+{% include image-gallery.html images="meca.jpeg" height="500" %} 
 <span style="font-size: 12px">Meca 500 Robot from https://iptech1.com/product/meca500-robot/</span>
 
 
 
 
 ## Results
-Implemented robot motion and pneumatic control using RoboDK and Mecademic software and configured Basler Pylon image acquisition system to generate inspection images{% include image-gallery.html images="SrProjectImage3.jpg" height="400" %}
+- Produced detailed and precise images using the automated process in testing and created a detailed framework of how to produce inspection images for whole frame in manufacturing
+
+{% include image-gallery.html images="SrProjectImage3.jpg" height="400" %}
 <span style="font-size: 12px">Design proprietary under NDA - generic substitute image from https://www.sciencedirect.com/science/article/pii/S0014305723009096</span>
 
-Produced detailed and precise images using the automated process in testing and created a detailed framework of how to produce inspection images for whole frame in manufacturing
-
-Design Strengths: 
-- Single camera
-- Successful move to capture full outer frame
 
 
 ## The Team
