@@ -13,15 +13,15 @@ main-image: /Sapien 3.jpeg
 
 ---
 
-{% include image-gallery.html images="Sapien 3.png" height="300" align="left" %}
+{% include image-gallery.html images="Sapien 3.png" height="300" align="right" %}
 
 <br>
 <br>
 ## Goals: 
 Improve "subjective and tedious" inspection while maintaining accuracy and repeatability
-- 100% inspection of metal frame
-- "Lights Out" inspection
-- Minimize inspection time
+    - 100% inspection of metal frame
+    - "Lights Out" inspection
+    - Minimize inspection time
 
 <div style="clear: both;"></div>
 
